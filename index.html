@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reloaded Explorer — the file manager built for developers</title>
+<meta name="description" content="Tabs, dual pane and a real integrated terminal that opens in the folder you're in, plus WSL, Git and instant previews of Markdown, code, PDF, Excel and PowerPoint. For Windows 10 and 11.">
+<meta property="og:title" content="Reloaded Explorer">
+<meta property="og:description" content="The file manager built for developers.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon-64.png">
+<link rel="stylesheet" href="site.css">
+<style>
+	.hero { text-align: center; padding: 56px 16px 32px; background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(142, 92, 247, .28), transparent 70%); }
+	.hero img.logo { width: 112px; height: 112px; }
+	.hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); margin: 16px 0 8px; letter-spacing: -.02em; }
+	.hero h1 span { background: linear-gradient(90deg, #8e5cf7, #22d3ee); -webkit-background-clip: text; background-clip: text; color: transparent; }
+	.hero p { color: var(--muted); font-size: 1.15rem; max-width: 640px; margin: 0 auto 24px; }
+	.shot { max-width: 1100px; margin: 8px auto 0; padding: 0 16px; }
+	.shot img { border-radius: 10px; box-shadow: 0 20px 60px rgba(20, 8, 60, .35); }
+	.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; max-width: 1100px; margin: 40px auto; padding: 0 16px; }
+	.grid .card { margin: 0; }
+	.grid h3 { margin: 0 0 6px; font-size: 1.05rem; }
+	.grid p { margin: 0; color: var(--muted); }
+	.small { font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header class="bar"><a class="brand" href="./"><img src="assets/icon-64.png" alt="" width="28" height="28">Reloaded Explorer</a>
+<nav><a href="#features">Features</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></header>
+
+<section class="hero">
+	<img class="logo" src="assets/icon-256.png" alt="Reloaded Explorer icon">
+	<h1>Reloaded <span>Explorer</span></h1>
+	<p>The file manager built for developers. Tabs, dual pane and a real terminal that opens right in the folder you're in, plus WSL, Git and instant previews.</p>
+	<a class="btn" href="support.html">Support and documentation</a>
+	<p class="small" style="margin-top:12px">The Microsoft Store release is being prepared. A download link will be added after publication.</p>
+	<p class="small" style="margin-top:12px">Windows 10 (2004) and Windows 11 · x64 and ARM64</p>
+</section>
+
+<figure class="shot"><img src="assets/screenshot-hero.png" alt="Reloaded Explorer showing a project folder with tabs and a Markdown preview" onerror="this.closest('figure').remove()"></figure>
+
+<section id="features" class="grid">
+	<div class="card"><h3>A real terminal, built in</h3><p>Press <kbd>Ctrl</kbd>+<kbd>`</kbd> for PowerShell, CMD or WSL in the current folder. It runs on a genuine Windows pseudo-console, so colours and cursor movement work.</p></div>
+	<div class="card"><h3>WSL-aware</h3><p>Browse <code>\\wsl$</code> and open that distro's shell at the matching Linux path.</p></div>
+	<div class="card"><h3>Git at a glance</h3><p>See the current branch in the status bar, and clone, fetch, pull, push and sync without leaving the window.</p></div>
+	<div class="card"><h3>Preview everything</h3><p>Markdown, code, PDF, Excel and PowerPoint files preview instantly. No Office needed.</p></div>
+	<div class="card"><h3>Tabs &amp; dual pane</h3><p>Work in several folders at once, with tabs, side-by-side panes and a Columns view.</p></div>
+	<div class="card"><h3>Developer shortcuts</h3><p>Copy relative or Linux paths, create Markdown and HTML files in one click, and open anything from the command palette.</p></div>
+	<div class="card"><h3>Local file management</h3><p>App settings and file operations stay on your PC. Optional Git and network features connect to the services you choose. Read our privacy policy for details.</p></div>
+	<div class="card"><h3>Feels native</h3><p>Light and dark themes with Mica backdrops, in more than 40 languages.</p></div>
+</section>
+
+<footer class="foot">© 2026 Aldrin Gustavo Stori · Reloaded Explorer is based on <a href="https://github.com/files-community/Files">Files</a> (MIT License). Not affiliated with Microsoft or the Files Community.</footer>
+</body>
+</html>

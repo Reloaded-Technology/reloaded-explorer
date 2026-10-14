@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a problem with Reloaded Explorer.
+title: 'Bug: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public issue tracker. Remove personal file contents, usernames and credentials from logs and screenshots before sharing them.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and the behavior you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: files_version
+    attributes:
+      label: Reloaded Explorer version
+      description: Find the version in Settings → About.
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Optional logs or screenshots
+      description: Share only information you want to publish publicly.
